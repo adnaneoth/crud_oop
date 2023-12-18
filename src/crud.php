@@ -41,10 +41,7 @@ class crud {
     
         $stmt = $this->pdo->prepare($sql);
     
-        if (!$stmt) {
-            die("Error in prepared statement: " . $this->pdo->errorInfo()[2]);
-        }
-    
+       
         foreach ($data as $key => &$value) {
             $stmt->bindParam(":$key", $value);
         }

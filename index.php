@@ -24,7 +24,7 @@ $database = new crud();
 //      echo "Failed to delete .";
 //  }
 
- $dataToInsert = ['name' => 'Mohamed'];
+ $dataToInsert = ['name' => 'amine'];
  $result = $database->updateRecord('user',$dataToInsert, 13);
 
 
